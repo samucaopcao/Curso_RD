@@ -7,7 +7,8 @@ public class Principal {
 	public static void main(String[] args) {
 		Cachorro cao = new Cachorro();
 		Gato gato = new Gato();
-		
+
+		/*		
 		//Inserindo os valores dos atributos do Objeto cao
 		String corCao = JOptionPane.showInputDialog(null, "Digite a cor do Cachorro:");
 		cao.setCor(corCao);
@@ -53,7 +54,30 @@ public class Principal {
 		System.out.println(gato.mexerGato("Mexendo"));
 		System.out.println("");
 		System.out.println(gato.virGato("Vai"));
-
+		 */
+		
+		Passaro passarinho = new Passaro();
+		
+		//Inserindo os valores dos atributos do Objeto cao
+		String corPassaro = JOptionPane.showInputDialog(null, "Digite a cor do Pássaro:");
+		passarinho.setCor(corPassaro);
+		
+		String corPenas = JOptionPane.showInputDialog(null, "Digite a cor das penas do Pássaro:");
+		passarinho.setCorPenas(corPenas);
+		
+		String cantaPassaro = JOptionPane.showInputDialog(null, "Digite se o Pássaro canta:");
+		passarinho.setCanta(cantaPassaro);
+		
+		double alturaPassaro = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite a altura do Pássaro:"));
+		passarinho.setAltura(alturaPassaro);
+		
+		double comprimentoPassaro = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o comprimento do Pássaro:"));
+		passarinho.setComprimento(comprimentoPassaro);
+		
+		double pesoPassaro = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o peso do Pássaro:"));
+		passarinho.setPeso(pesoPassaro);
+		
+		System.out.println(passarinho);
 	}
 
 }
